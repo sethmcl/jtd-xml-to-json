@@ -1,8 +1,21 @@
 {
   "name":        "jtd-xml-to-json",
   "version":     "0.0.1",
+  "main"         "JX2J.js",
   "description": "Takes XML output from JS Test Driver and convert it into JSON",
-  "author":      "Seth McLaughlin",
+  "author":      "Seth McLaughlin <smclaugh AT linkedin DOT com>",
+  "keywords":    [ "tdd", "jstestdriver", "xml", "json", "js test driver" ],
+  "bin":         {
+    "jx2j":      "./bin/jx2j"
+  },
+   "licenses"       : [{
+      "type"        : "Apache",
+      "url"         : "https://raw.github.com/sethmcl/jtd-xml-to-json/master/LICENSE.TXT"
+   }],
+   "repository"     : {
+     "type"         : "git",
+     "url"          : "git://github.com/sethmcl/jtd-xml-to-json.git"
+   },
   "dependencies": {
     "libxmljs":      ">=0.0.1",
     "nodeunit":      ">=0.0.1",
