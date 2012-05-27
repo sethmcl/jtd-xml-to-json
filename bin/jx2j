@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+var colors = require('colors'),
+    file = process.argv[2];
+
+if(!file) {
+  console.error('usage: '.yellow, process.argv[0].cyan, process.argv[1].cyan, '[xml file]'.cyan);
+  process.exit(1);
+} else {
+  new (require("../JX2J"))(file).run(function(results) {
+    console.log(results);
+  });
+  process.exit(0);
+}

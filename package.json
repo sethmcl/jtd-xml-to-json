@@ -1,0 +1,12 @@
+{
+  "name":        "jtd-xml-to-json",
+  "version":     "0.0.1",
+  "description": "Takes XML output from JS Test Driver and convert it into JSON",
+  "author":      "Seth McLaughlin",
+  "dependencies": {
+    "libxmljs":      ">=0.0.1",
+    "nodeunit":      ">=0.0.1",
+    "colors":        ">=0.6.0"
+  },
+  "engine":      "node >= 0.4.0"
+}
